@@ -32,7 +32,7 @@ app.use(
   helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
 );
 const corsOptions = {
-  origin: "https://azyaa-al-araais.pages.dev/",
+  origin: "https://azyaa-al-araais.pages.dev",
 };
 
 app.use(cors(corsOptions));
