@@ -43,14 +43,14 @@ export const HeroSwiper = () => {
       <div className="swiper-wrapper">
         <div className="swiper-slide">
           <img
-            src="https://cms-cdn.thesolesupplier.co.uk/2020/12/image-via-43einhalb-1_w1160.jpg"
+            src="https://res.cloudinary.com/duh30yscb/image/upload/v1709677557/WeddingSuitsMenDZ/y5lcecyimbskmhkq1spw.webp"
             alt="hero image"
             className=" object-cover inset-0 h-full w-full"
           />
         </div>
         <div className="swiper-slide">
           <img
-            src="https://images.augustman.com/wp-content/uploads/sites/3/2022/04/25181356/air-jordan-1-retro-high-og-_university-blue_1.jpeg"
+            src="https://res.cloudinary.com/duh30yscb/image/upload/v1709677988/WeddingSuitsMenDZ/bjwadiwbj2lswntspkqi.jpg"
 
             alt="hero image"
             className=" object-cover inset-0 h-full w-full"

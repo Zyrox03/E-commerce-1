@@ -33,35 +33,6 @@ const ProductDetails = () => {
   //   GET DISCOUNT
   let deduction = 0;
 
-  //   SHARE BUTTONS
-
-  function shareOnSocialMedia(platform) {
-    let linkToShare = window.location.href;
-    let shareUrl = "";
-    switch (platform) {
-      case "facebook":
-        shareUrl =
-          "https://www.facebook.com/sharer/sharer.php?u=" +
-          encodeURIComponent(linkToShare);
-        break;
-      case "twitter":
-        shareUrl =
-          "https://twitter.com/intent/tweet?url=" +
-          encodeURIComponent(linkToShare);
-        break;
-      case "pinterest":
-        shareUrl =
-          "https://www.pinterest.com/pin/create/button/?url=" +
-          encodeURIComponent(linkToShare);
-        break;
-      // Add more cases for other social media platforms if needed
-
-      default:
-        return;
-    }
-
-    window.open(shareUrl, "_blank", "width=600,height=400");
-  }
   const products = useSelector((state) => state.products.items);
 
   const product = products.find((product) => product.slug === productID);
@@ -177,7 +148,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-slate-300/50 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[#edf2f4]  flex flex-col relative overflow-hidden">
       <Helmet>
         <title>{`${product?.name} - ${product?.price} DA`}</title>
         <meta name="description" content={product?.description} />
@@ -191,7 +162,7 @@ const ProductDetails = () => {
         <meta property="og:image" content={product?.images[0]?.image?.path} />
         <meta
           property="og:url"
-          content={`https://topshoes-dz.pages.dev/${product?.slug}`}
+          content={`${import.meta.env.VITE_TOP_SHOE_DZ_BASE_API}/${product?.slug}`}
         />
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
@@ -249,7 +220,7 @@ const ProductDetails = () => {
                 smooth={true}
                 offset={-400}
               >
-                <button className="lg:hidden w-full flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg p-2 hover:bg-purple-900 transition active:scale-95">
+                <button className="lg:hidden w-full flex items-center justify-center gap-4 bg-green-800 text-white p-2 hover:bg-green-900 transition active:scale-95">
                   <i className="text-lg fa-solid fa-shopping-cart"></i>
                   <p className="text-lg font-bold">شراء</p>
                 </button>
@@ -258,7 +229,7 @@ const ProductDetails = () => {
                 dir="rtl"
                 className="flex h-fit w-full items-center flex-wrap gap-2"
               >
-                <h2 className="text-xl md:text-4xl font-bold text-purple-800 ml-2">
+                <h2 className="text-xl md:text-4xl font-bold text-green-800 ml-2">
                   {product?.price} DA
                 </h2>
                 {parseFloat(product?.oldPrice) > 0 && (
@@ -270,7 +241,7 @@ const ProductDetails = () => {
                     {deduction > 0 && (
                       <div
                         style={{ whiteSpace: "nowrap" }}
-                        className="ml-12 bg-purple-800 text-white py-1 px-2 font-bold rounded-xl"
+                        className="ml-12 bg-green-800 text-white py-1 px-2 font-bold"
                       >
                         {deduction}% تخفيض
                       </div>
@@ -279,13 +250,10 @@ const ProductDetails = () => {
                 )}
               </div>
               <div className="flex h-fit w-full items-end flex-col ">
-                <h2 className="text-3xl mb-4">
-                  👇
-                  <span className="text-purple-800 underline font-bold">
-                    {" "}
+                <h2 className="text-3xl mb-4 text-green-700 underline font-bold">
+                  
                     المواصفات{" "}
-                  </span>{" "}
-                  👇
+                  
                 </h2>
                 <p
                   dir="rtl"
@@ -298,16 +266,16 @@ const ProductDetails = () => {
                 <>
                   {product && uniqueColors?.length > 0 && (
                     <div dir="rtl" className="flex flex-col gap-3 ">
-                      <h2 className="text-3xl mb-4 underline">اللون:</h2>
+                      <h2 className="text-3xl mb-4 text-green-700 underline">اللون:</h2>
                       <div className="flex flex-wrap gap-3">
                         {uniqueColors.map((colorObj, index) => (
                           <div
                             key={index}
-                            className={`circle cursor-pointer rounded-3xl w-16 h-16 border border-2 transition  ${
+                            className={`circle cursor-pointer w-16 h-16 border border-2 transition  ${
                               selectedOptions.color === colorObj.productColor
-                                ? "bg-purple-200 border-purple-800 p-1"
+                                ? "bg-green-200 border-green-800 p-1"
                                 : "bg-slate-200"
-                            } rounded-3xl`}
+                            } `}
                             onClick={() =>
                               handleColorClick(colorObj.productColor)
                             }
@@ -317,7 +285,7 @@ const ProductDetails = () => {
                                 colorObj.image?.path ||
                                 "https://content.optimumnutrition.com/i/on/C100969_Image_01?layer0=$PDP$"
                               }
-                              className="w-full h-full object-cover rounded-3xl"
+                              className="w-full h-full object-cover"
                               alt=""
                             />
 
@@ -342,15 +310,15 @@ const ProductDetails = () => {
                     <div dir="rtl" className="flex flex-col gap-3 ">
                       {product && product.size.length > 0 && (
                         <div>
-                          <h2 className="text-3xl mb-4 underline">المقاس:</h2>
+                          <h2 className="text-3xl mb-4 text-green-700 text-green-700 underline">المقاس:</h2>
                           <div className="flex flex-wrap gap-3">
                             {product.size.map((size, index) => (
                               <div
                                 key={index}
-                                className={`cursor-pointer rounded-xl p-2 h-10 border border-2 ${
+                                className={`cursor-pointer min-w-[50px] p-2 h-10 border border-2 ${
                                   selectedOptions.size === size
-                                    ? "bg-purple-600 text-white relative"
-                                    : "bg-slate-200 border border-purple-500 text-gray-700"
+                                    ? "bg-green-600 text-white relative"
+                                    : "bg-slate-200 border border-green-500 text-gray-700"
                                 } flex justify-center gap-2 items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95`}
                                 onClick={() => handleSizeClick(size)}
                               >
@@ -375,10 +343,10 @@ const ProductDetails = () => {
                   )}
 
                   <div dir="rtl" id="variants" className="flex flex-col gap-3 ">
-                    <h2 className="text-3xl mb-4 underline">الكمية:</h2>
+                    <h2 className="text-3xl mb-4 text-green-700 underline">الكمية:</h2>
                     <div className="flex gap-3 items-center">
                       <div
-                        className="cursor-pointer bg-purple-600 rounded-xl w-10 h-10 border border-2 border-purple-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
+                        className="cursor-pointer bg-green-600 w-10 h-10 border border-2 border-green-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
                         onClick={handleDecrement}
                       >
                         <i className="fas fa-minus text-white"></i>
@@ -389,7 +357,7 @@ const ProductDetails = () => {
                       </span>
 
                       <div
-                        className="cursor-pointer bg-purple-600 rounded-xl w-10 h-10 border border-2 border-purple-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
+                        className="cursor-pointer bg-green-600 w-10 h-10 border border-2 border-green-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
                         onClick={handleIncrement}
                       >
                         <i className="fas fa-plus text-white"></i>
@@ -416,31 +384,13 @@ const ProductDetails = () => {
               ) : (
                 <div
                   dir="rtl"
-                  className="bg-red-500 text-white p-4 rounded-md shadow-md"
+                  className="bg-red-500 text-white p-4 shadow-md"
                 >
                   <p className="text-lg font-semibold">نفدت الكمية حالياً</p>
                 </div>
               )}
 
-              <div dir="rtl" className="mt-auto">
-                <h3 className="italic font-bold">
-                  Partager :{" "}
-                  <span className="flex gap-4">
-                    <i
-                      onClick={() => shareOnSocialMedia("facebook")}
-                      className=" text-2xl fa-brands cursor-pointer text-purple-800 fa-square-facebook"
-                    ></i>
-                    <i
-                      onClick={() => shareOnSocialMedia("pinterest")}
-                      className=" text-2xl fa-brands cursor-pointer text-purple-800 fa-pinterest"
-                    ></i>
-                    <i
-                      onClick={() => shareOnSocialMedia("twitter")}
-                      className=" text-2xl fa-brands cursor-pointer text-purple-800 fa-twitter"
-                    ></i>
-                  </span>
-                </h3>
-              </div>
+             
             </div>
           </div>
         </div>

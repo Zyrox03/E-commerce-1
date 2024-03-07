@@ -25,16 +25,16 @@ const AllProducts = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen bg-slate-300/50 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[#edf2f4] flex flex-col relative overflow-hidden">
       <Helmet>
-        <title>Top Shoe DZ - Tous les Produits</title>
+        <title>  أزياء العرائس  - Tous les Produits</title>
         <meta
           name="description"
           content="Votre boutique en ligne de chaussures - Découvrez tous nos produits et profitez des meilleures offres."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="Top Shoe DZ - Tous les Produits" />
+        <meta property="og:title" content="  أزياء العرائس  - Tous les Produits" />
         <meta
           property="og:description"
           content="Découvrez tous nos produits et profitez des meilleures offres dans notre boutique en ligne de chaussures."
@@ -47,7 +47,7 @@ const AllProducts = () => {
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Shoe DZ - Tous les Produits" />
+        <meta name="twitter:title" content="  أزياء العرائس  - Tous les Produits" />
         <meta
           name="twitter:description"
           content="Découvrez tous nos produits et profitez des meilleures offres dans notre boutique en ligne de chaussures."

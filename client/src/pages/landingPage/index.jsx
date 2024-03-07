@@ -12,7 +12,6 @@ import { SideNav } from "../../components/SideNav";
 import { Helmet } from "react-helmet";
 import MetaPixel from "../../utils/meta/metaPixel";
 
-
 const LandingPage = () => {
   const [openSideNav, setOpenSideNav] = useState(false);
 
@@ -27,36 +26,57 @@ const LandingPage = () => {
 
   const products = useSelector((state) => state.products.items);
 
-
   return (
-    <div className="min-h-screen bg-slate-300/50 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[#edf2f4] flex flex-col relative overflow-hidden">
+      <Helmet>
+        <title> أزياء العرائس - Votre Boutique En Ligne</title>
+        <meta
+          name="description"
+          content="Votre boutique en ligne de chaussures - Découvrez les meilleures offres sur nos produits."
+        />
 
-<Helmet>
-  <title>Top Shoe DZ - Votre Boutique En Ligne</title>
-  <meta name="description" content="Votre boutique en ligne de chaussures - Découvrez les meilleures offres sur nos produits." />
-  
-  {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-  <meta property="og:title" content="Top Shoe DZ - Votre Boutique En Ligne" />
-  <meta property="og:description" content="Découvrez les meilleures offres sur une large gamme de produits dans notre boutique." />
-  <meta property="og:image" content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg" />
-  <meta property="og:url" content="https://topshoes-dz.pages.dev" />
+        {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
+        <meta
+          property="og:title"
+          content="   أزياء العرائس - Votre Boutique En Ligne"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez les meilleures offres sur une large gamme de produits dans notre boutique."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+        />
+        <meta property="og:url" content="https://topshoes-dz.pages.dev" />
 
-  {/* Balises Twitter Card pour le partage sur Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Top Shoe DZ - Votre Boutique En Ligne" />
-  <meta name="twitter:description" content="Découvrez les meilleures offres sur une large gamme de produits dans notre boutique." />
-  <meta name="twitter:image" content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg" />
+        {/* Balises Twitter Card pour le partage sur Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="   أزياء العرائس - Votre Boutique En Ligne"
+        />
+        <meta
+          name="twitter:description"
+          content="Découvrez les meilleures offres sur une large gamme de produits dans notre boutique."
+        />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+        />
 
-  {/* Balises méta supplémentaires */}
-  <meta name="keywords" content="ecommerce, offres, shopping en ligne, produits" />
-  <meta name="robots" content="index, follow" />
+        {/* Balises méta supplémentaires */}
+        <meta
+          name="keywords"
+          content="ecommerce, offres, shopping en ligne, produits"
+        />
+        <meta name="robots" content="index, follow" />
 
-  {/* Balise meta viewport pour le design responsive */}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</Helmet>
+        {/* Balise meta viewport pour le design responsive */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
 
-<MetaPixel/>
-
+      <MetaPixel />
 
       <NavBar setOpenSideNav={setOpenSideNav} isLanding />
       <SideNav

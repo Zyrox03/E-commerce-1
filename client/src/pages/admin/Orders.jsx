@@ -83,20 +83,20 @@ const Orders = () => {
   return (
     <div className="container mx-auto">
       <Helmet>
-        <title>Top Shoe DZ - Gestion des Commandes</title>
+        <title>  أزياء العرائس  - Gestion des Commandes</title>
         <meta
           name="description"
-          content="Consultez et gérez les commandes sur le portail administratif de Top Shoe DZ. Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
+          content="Consultez et gérez les commandes sur le portail administratif de   أزياء العرائس . Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
         <meta
           property="og:title"
-          content="Top Shoe DZ - Gestion des Commandes (Admin)"
+          content="  أزياء العرائس  - Gestion des Commandes (Admin)"
         />
         <meta
           property="og:description"
-          content="Consultez et gérez les commandes sur le portail administratif de Top Shoe DZ. Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
+          content="Consultez et gérez les commandes sur le portail administratif de   أزياء العرائس . Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
         />
         <meta
           property="og:image"
@@ -111,11 +111,11 @@ const Orders = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Top Shoe DZ - Gestion des Commandes (Admin)"
+          content="  أزياء العرائس  - Gestion des Commandes (Admin)"
         />
         <meta
           name="twitter:description"
-          content="Consultez et gérez les commandes sur le portail administratif de Top Shoe DZ. Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
+          content="Consultez et gérez les commandes sur le portail administratif de   أزياء العرائس . Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
         />
         <meta
           name="twitter:image"

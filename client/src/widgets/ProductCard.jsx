@@ -11,14 +11,14 @@ export const ProductCard = ({ product }) => {
   return (
     <Link
       to={`/${product.slug}`}
-      className="flex flex-col gap-2 w-[10em] lg:w-[20em] p-4  bg-slate-100 rounded-lg relative shadow-lg"
+      className="flex flex-col items-center gap-2 w-[10em] lg:w-[20em] p-4  bg-slate-100  relative shadow-lg"
       dir="rtl"
     >
-      <div className="overflow-hidden rounded-lg ">
+      <div className="overflow-hidden rounded-lg w-full">
         {/* discount tag */}
 
         {deduction > 0 && (
-          <div className="bg-purple-800 text-white w-fit absolute top-6 left-6 px-2 font-bold rounded-full z-10">
+          <div className="bg-green-800 text-white w-fit absolute top-6 right-6 px-2 font-bold  z-10">
             {deduction}% تخفيض
           </div>
         )}
@@ -38,15 +38,13 @@ export const ProductCard = ({ product }) => {
           <span className="text-sm font-normal line-through">
             DA {product.oldPrice}
           </span>
-        )}
-        {" "}
-        <span className="text-purple-700">DA {product.price} </span>
-
+        )}{" "}
+        <span className="text-green-700">DA {product.price} </span>
       </p>
 
-      <button className="hidden w-full lg:flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg p-2 hover:bg-purple-900 transition active:scale-95">
-        <i className="text-lg fa-solid fa-cart-plus"></i>
-        <p className="text-lg font-bold">انظر</p>
+      <button className="hidden w-full lg:flex items-center justify-center gap-4 bg-green-800 text-white p-2 hover:bg-green-900 transition active:scale-95">
+        {/* <i className="text-lg fa-solid fa-cart-plus"></i> */}
+        <p className="text-lg font-bold">اشترِي الآن</p>
       </button>
     </Link>
   );

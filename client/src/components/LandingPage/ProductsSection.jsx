@@ -12,7 +12,7 @@ export const ProductsSection = ({ productsList }) => {
         sub_title="اكتشفوا الأناقة في كل تفصيل - مجموعة حصرية لكل أسلوب ومناسبة"
       />
       {productsList.length > 0 ? (
-        <div className="flex justify-around items-center gap-12 flex-wrap">
+        <div className="flex justify-around items-start gap-12 flex-wrap">
         {productsList.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

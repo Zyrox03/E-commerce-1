@@ -36,12 +36,12 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
       style={{
         zIndex: 20,
       }}
-      className={`h-[5em] flex justify-between items-center gap-2 px-2 ${
+      className={`h-[5em] flex justify-between items-center gap-2 px-2 lg:px-6 ${
         isLanding
           ? isScrolled
-            ? "py-3 bg-slate-300 bg-opacity-50 backdrop-blur-md shadow-md"
-            : "py-6 text-slate-100 "
-          : "py-3 bg-slate-300 bg-opacity-50 backdrop-blur-md shadow-md"
+            ? "py-3 bg-[#e5e5e5]  shadow-md"
+            : "py-6 text-slate-100"
+          : "py-3 bg-[#e5e5e5] shadow-md"
       } fixed w-full transition`}
     >
       {isAdmin ? (
@@ -54,46 +54,42 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
         </Link>
       )}
 
-      <div className="lg:flex-1 text-center lg:text-start">
-        {isLanding ? (
-          <LinkScroll to={"hero"} spy={true} smooth={true} offset={0}>
-            <h1
-              className={`text-lg sm:text-2xl font-bold uppercase  transition  cursor-pointer ${
-                isScrolled ? "text-slate-800" : "text-purple-700"
-              } `}
-            >
-              Top Shoe DZ
-            </h1>
-          </LinkScroll>
-        ) : (
-          <Link to="/">
-            <h1
-              className={`text-sm sm:text-2xl font-bold uppercase  transition  cursor-pointer ${
-                isScrolled ? "text-slate-800" : "text-purple-700"
-              } `}
-            >
-              Top Shoe DZ
-            </h1>
-          </Link>
-        )}
+      
+
+<div className="flex items-center  flex-1">
+        {/* <i className="text-xl fa-solid fa-cart-shopping ml-auto"></i> */}
+        <div className="mr-auto flex gap-2 text-black">
+          {isAdmin ? (
+            <Link className="hidden lg:flex" to="/admin">
+              <Button text="Admin" icon="fa-solid fa-user-tie" />
+            </Link>
+          ) : (
+            <Link className="hidden lg:flex" to="/account">
+              <Button text="حسابي" icon="fa-solid fa-user" />
+            </Link>
+          )}
+
+         
+        </div>
       </div>
+      
       <ul className="hidden lg:flex items-center flex-row-reverse justify-around flex-1">
         {isLanding ? (
           <LinkScroll to={"hero"} spy={true} smooth={true} offset={0}>
-            <li className="hover:text-purple-500 cursor-pointer font-bold transition">
+            <li className="hover:text-green-700 cursor-pointer font-bold transition">
               الصفحة الرئيسية
             </li>
           </LinkScroll>
         ) : (
           <Link to="/">
-            <li className="hover:text-purple-500 cursor-pointer font-bold transition">
+            <li className="hover:text-green-700 cursor-pointer font-bold transition">
               الصفحة الرئيسية
             </li>
           </Link>
         )}
 
         <Link to="/shop">
-          <li className="hover:text-purple-500 cursor-pointer font-bold transition">
+          <li className="hover:text-green-700 cursor-pointer font-bold transition">
             المتجر
           </li>
         </Link>
@@ -107,43 +103,51 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
               offset={-100}
               onClick={() => setOpenSideNav(false)}
             >
-              <li className="hover:text-purple-500 cursor-pointer font-bold transition">
+              <li className="hover:text-green-700 cursor-pointer font-bold transition">
                 عرض خاص
               </li>
             </LinkScroll>
           ) : (
             <Link to="/">
-              <li className="hover:text-purple-500 cursor-pointer font-bold transition">
+              <li className="hover:text-green-700 cursor-pointer font-bold transition">
                 عرض خاص
               </li>
             </Link>
           ))}
 
         <Link to="/contact">
-          <li className="hover:text-purple-500 cursor-pointer font-bold transition">
+          <li className="hover:text-green-700 cursor-pointer font-bold transition">
             اتصل بنا
           </li>
         </Link>
       </ul>
+      <div className="lg:flex-1 text-center w-full lg:text-end">
+        {isLanding ? (
+          <LinkScroll to={"hero"} spy={true} smooth={true} offset={0}>
+            <h1
+              className={`text-lg sm:text-2xl font-bold uppercase  transition  cursor-pointer ${
+                isScrolled ? "text-slate-800" : "text-white-800"
+              } `}
+            >
+              أزياء العرائس
+            </h1>
+          </LinkScroll>
+        ) : (
+          <Link to="/">
+            <h1
+              className={`text-sm sm:text-2xl font-bold uppercase  transition  cursor-pointer ${
+                isScrolled ? "text-slate-800" : "text-white-800"
+              } `}
+            >
+              أزياء العرائس
+            </h1>
+          </Link>
+        )}
+      </div>
 
-      <div className="flex items-center  flex-1">
-        {/* <i className="text-xl fa-solid fa-cart-shopping ml-auto"></i> */}
-        <div className="ml-auto flex gap-2 text-black">
-          {isAdmin ? (
-            <Link className="hidden lg:flex" to="/admin">
-              <Button text="Admin" icon="fa-solid fa-user-tie" />
-            </Link>
-          ) : (
-            <Link className="hidden lg:flex" to="/account">
-              <Button text="حسابي" icon="fa-solid fa-user" />
-            </Link>
-          )}
-
-          <div onClick={() => setOpenSideNav(true)} className="flex lg:hidden">
+      <div onClick={() => setOpenSideNav(true)} className="flex lg:hidden">
             <Button text="قائمة" icon="fa-solid fa-bars" />
           </div>
-        </div>
-      </div>
     </nav>
   );
 };

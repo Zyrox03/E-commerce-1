@@ -4,7 +4,7 @@ const MetaPixel = () => {
   const pixelID = import.meta.env.VITE_PIXEL_ID;
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <script id="facebook-pixel-script">
           {`
           !function(f, b, e, v, n, t, s) {
@@ -47,7 +47,7 @@ const MetaPixel = () => {
         
 
 
-      </Helmet>
+      </Helmet> */}
     </>
   );
 };

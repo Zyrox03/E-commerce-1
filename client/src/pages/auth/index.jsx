@@ -70,19 +70,19 @@ const Auth = () => {
   });
 
   return (
-    <div className=" bg-slate-300/50 flex flex-col relative overflow-hidden">
+    <div className="bg-[#edf2f4] flex flex-col relative overflow-hidden">
       <Helmet>
-        <title>Top Shoe DZ - Connexion</title>
+        <title>  أزياء العرائس  - Connexion</title>
         <meta
           name="description"
-          content="Connectez-vous ou inscrivez-vous sur Top Shoe DZ pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
+          content="Connectez-vous ou inscrivez-vous sur   أزياء العرائس  pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="Top Shoe DZ - Connexion" />
+        <meta property="og:title" content="  أزياء العرائس  - Connexion" />
         <meta
           property="og:description"
-          content="Connectez-vous ou inscrivez-vous sur Top Shoe DZ pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
+          content="Connectez-vous ou inscrivez-vous sur   أزياء العرائس  pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
         />
         <meta
           property="og:image"
@@ -95,10 +95,10 @@ const Auth = () => {
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Shoe DZ - Connexion" />
+        <meta name="twitter:title" content="  أزياء العرائس  - Connexion" />
         <meta
           name="twitter:description"
-          content="Connectez-vous ou inscrivez-vous sur Top Shoe DZ pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
+          content="Connectez-vous ou inscrivez-vous sur   أزياء العرائس  pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
         />
         <meta
           name="twitter:image"
@@ -138,7 +138,7 @@ const Auth = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
-              className={`w-full p-2 border border-gray-300 rounded ${
+              className={`w-full p-2 border border-gray-300  ${
                 formik.touched.email && formik.errors.email
                   ? "border-red-500"
                   : ""
@@ -162,7 +162,7 @@ const Auth = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.password}
-              className={`w-full p-2 border border-gray-300 rounded ${
+              className={`w-full p-2 border border-gray-300  ${
                 formik.touched.password && formik.errors.password
                   ? "border-red-500"
                   : ""
@@ -177,14 +177,14 @@ const Auth = () => {
           <button
             disabled={loading}
             type="submit"
-            className="bg-purple-800 flex w-full justify-center items-center gap-2 text-white disabled:bg-purple-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-purple-600 focus:outline-none focus:shadow-outline-blue"
+            className="bg-green-800 flex w-full justify-center items-center gap-2 text-white disabled:bg-green-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 -md hover:bg-green-600 focus:outline-none focus:shadow-outline-blue"
           >
             <i className="fa-solid fa-user"></i>
             <p className="text-lg font-bold">تسجيل الدخول</p>
           </button>
 
           {errorMessage && (
-            <div className="text-white font-bold text-md my-4 p-2 bg-red-500 rounded-md">
+            <div className="text-white font-bold text-md my-4 p-2 bg-red-500 -md">
               {errorMessage}
             </div>
           )}

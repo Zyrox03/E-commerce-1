@@ -8,7 +8,9 @@ export const Feedback = () => {
     // Initialize Swiper inside the useEffect function
     const swiper = new Swiper(".feedbackSwiper", {
       direction: "horizontal",
-
+      effect:'flip',
+      loop:true,
+      
       spaceBetween: 100,
       speed: 500,
 
@@ -53,10 +55,10 @@ export const Feedback = () => {
           {testimonials &&
             testimonials.map(({ name, feedback, text }, index) => (
               <div key={index} className="swiper-slide">
-                <div className="  bg-slate-100 rounded-lg flex flex-col gap-4 p-4 hover:bg-purple-400/50  transition duration-500">
-                  <i className="text-4xl text-purple-800 fa-solid fa-quote-left"></i>
-                  <h3 className="text-lg text-purple-800 font-bold">{name} </h3>
-                  <h4 className="text-md text-purple-800 font-bold">
+                <div className="  bg-slate-100 shadow-xl rounded-lg flex flex-col gap-4 p-4 hover:bg-green-400/50  transition duration-500">
+                  <i className="text-4xl text-green-800 fa-solid fa-quote-left"></i>
+                  <h3 className="text-lg text-green-800 font-bold">{name} </h3>
+                  <h4 className="text-md text-slate-900 font-bold">
                     {feedback}{" "}
                   </h4>
                   <p className="text-md">{text} </p>

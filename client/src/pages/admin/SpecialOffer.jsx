@@ -73,20 +73,20 @@ const SpecialOffer = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md flex flex-col gap-4">
       <Helmet>
-        <title>Top Shoe DZ - Configuration des Offres Spéciales</title>
+        <title>  أزياء العرائس  - Configuration des Offres Spéciales</title>
         <meta
           name="description"
-          content="Configurez les offres spéciales sur le portail administratif de Top Shoe DZ. Gérez les réductions et les promotions pour offrir des avantages exclusifs aux clients."
+          content="Configurez les offres spéciales sur le portail administratif de   أزياء العرائس . Gérez les réductions et les promotions pour offrir des avantages exclusifs aux clients."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
         <meta
           property="og:title"
-          content="Top Shoe DZ - Configuration des Offres Spéciales (Admin)"
+          content="  أزياء العرائس  - Configuration des Offres Spéciales (Admin)"
         />
         <meta
           property="og:description"
-          content="Configurez les offres spéciales sur le portail administratif de Top Shoe DZ. Gérez les réductions et les promotions pour offrir des avantages exclusifs aux clients."
+          content="Configurez les offres spéciales sur le portail administratif de   أزياء العرائس . Gérez les réductions et les promotions pour offrir des avantages exclusifs aux clients."
         />
         <meta
           property="og:image"
@@ -101,11 +101,11 @@ const SpecialOffer = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Top Shoe DZ - Configuration des Offres Spéciales (Admin)"
+          content="  أزياء العرائس  - Configuration des Offres Spéciales (Admin)"
         />
         <meta
           name="twitter:description"
-          content="Configurez les offres spéciales sur le portail administratif de Top Shoe DZ. Gérez les réductions et les promotions pour offrir des avantages exclusifs aux clients."
+          content="Configurez les offres spéciales sur le portail administratif de   أزياء العرائس . Gérez les réductions et les promotions pour offrir des avantages exclusifs aux clients."
         />
         <meta
           name="twitter:image"

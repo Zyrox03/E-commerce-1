@@ -7,17 +7,17 @@ const DashboardCards = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
 
 <Helmet>
-        <title>Top Shoe DZ - Espace Admin</title>
+        <title>  أزياء العرائس  - Espace Admin</title>
         <meta
           name="description"
-          content="Espace d'administration réservé aux administrateurs de Top Shoe DZ. Gérez les produits, les commandes et les paramètres du site."
+          content="Espace d'administration réservé aux administrateurs de   أزياء العرائس . Gérez les produits, les commandes et les paramètres du site."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="Top Shoe DZ - Espace Admin" />
+        <meta property="og:title" content="  أزياء العرائس  - Espace Admin" />
         <meta
           property="og:description"
-          content="Espace d'administration réservé aux administrateurs de Top Shoe DZ. Gérez les produits, les commandes et les paramètres du site."
+          content="Espace d'administration réservé aux administrateurs de   أزياء العرائس . Gérez les produits, les commandes et les paramètres du site."
         />
         <meta
           property="og:image"
@@ -27,10 +27,10 @@ const DashboardCards = () => {
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Shoe DZ - Espace Admin" />
+        <meta name="twitter:title" content="  أزياء العرائس  - Espace Admin" />
         <meta
           name="twitter:description"
-          content="Espace d'administration réservé aux administrateurs de Top Shoe DZ. Gérez les produits, les commandes et les paramètres du site."
+          content="Espace d'administration réservé aux administrateurs de   أزياء العرائس . Gérez les produits, les commandes et les paramètres du site."
         />
         <meta
           name="twitter:image"

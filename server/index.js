@@ -32,7 +32,7 @@ app.use(
   helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
 );
 const corsOptions = {
-  origin: "https://topshoes-dz.pages.dev",
+  origin: "https://azyaa-al-araais.pages.dev/",
 };
 
 app.use(cors(corsOptions));
@@ -56,6 +56,7 @@ app.use("/orders", ordersRoutes);
 
 const userEmail = process.env.ADMIN_EMAIL;
 const userPasswordHash = process.env.ADMIN_PASSWORD_HASH;
+
 
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;

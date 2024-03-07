@@ -65,20 +65,20 @@ const Products = () => {
   return (
     <div className="container mx-auto">
       <Helmet>
-        <title>Top Shoe DZ - Gestion des Produits</title>
+        <title>  أزياء العرائس  - Gestion des Produits</title>
         <meta
           name="description"
-          content="Gérez efficacement les produits sur le portail administratif de Top Shoe DZ. Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
+          content="Gérez efficacement les produits sur le portail administratif de   أزياء العرائس . Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
         <meta
           property="og:title"
-          content="Top Shoe DZ - Gestion des Produits"
+          content="  أزياء العرائس  - Gestion des Produits"
         />
         <meta
           property="og:description"
-          content="Gérez efficacement les produits sur le portail administratif de Top Shoe DZ. Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
+          content="Gérez efficacement les produits sur le portail administratif de   أزياء العرائس . Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
         />
         <meta
           property="og:image"
@@ -93,11 +93,11 @@ const Products = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Top Shoe DZ - Gestion des Produits"
+          content="  أزياء العرائس  - Gestion des Produits"
         />
         <meta
           name="twitter:description"
-          content="Gérez efficacement les produits sur le portail administratif de Top Shoe DZ. Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
+          content="Gérez efficacement les produits sur le portail administratif de   أزياء العرائس . Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
         />
         <meta
           name="twitter:image"

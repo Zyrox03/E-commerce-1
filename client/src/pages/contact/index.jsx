@@ -72,16 +72,16 @@ const Contact = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen bg-slate-300/50 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[#edf2f4] flex flex-col relative overflow-hidden">
       <Helmet>
-        <title>Top Shoe DZ - Contactez-nous</title>
+        <title>  أزياء العرائس  - Contactez-nous</title>
         <meta
           name="description"
           content="Contactez-nous pour toute question ou préoccupation. Nous sommes là pour vous aider!"
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="Top Shoe DZ - Contactez-nous" />
+        <meta property="og:title" content="  أزياء العرائس  - Contactez-nous" />
         <meta
           property="og:description"
           content="Contactez-nous pour toute question ou préoccupation. Nous sommes là pour vous aider!"
@@ -97,7 +97,7 @@ const Contact = () => {
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Shoe DZ - Contactez-nous" />
+        <meta name="twitter:title" content="  أزياء العرائس  - Contactez-nous" />
         <meta
           name="twitter:description"
           content="Contactez-nous pour toute question ou préoccupation. Nous sommes là pour vous aider!"
@@ -179,7 +179,7 @@ const Contact = () => {
               name="message"
               onChange={formik.handleChange}
               value={formik.values.message}
-              className="w-full p-2 border border-gray-300 rounded h-40"
+              className="w-full p-2 border border-gray-300  h-40"
             />
             {formik.errors.message && formik.touched.message && (
               <div className="text-red-500">{formik.errors.message}</div>
@@ -188,7 +188,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className={`flex w-full items-center justify-center gap-4 bg-purple-800 text-white rounded-lg p-2 hover:bg-purple-900 transition active:scale-95 ${
+            className={`flex w-full items-center justify-center gap-4 bg-green-800 text-white  p-2 hover:bg-green-900 transition active:scale-95 ${
               formik.isSubmitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
             disabled={formik.isSubmitting}
@@ -203,7 +203,7 @@ const Contact = () => {
           )}
 
           {contactSuccess && (
-            <div className="text-green-600 max-w-md mx-auto text-center my-4 bg-green-100 p-3 rounded-md">
+            <div className="text-green-600 max-w-md mx-auto text-center my-4 bg-green-100 p-3 ">
               {contactSuccess}
             </div>
           )}

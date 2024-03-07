@@ -204,7 +204,7 @@ export const CheckoutForm = ({
     <form
       dir="rtl"
       onSubmit={formik.handleSubmit}
-      className="bg-slate-200 py-8 px-4 lg:px-8 rounded-md shadow-lg max-w-md w-full"
+      className="bg-slate-100 py-8 px-4 lg:px-8  shadow-lg max-w-md w-full"
     >
       <h2 className="text-2xl font-semibold mb-4">
         معلومات حول الدفع عند التسليم{" "}
@@ -221,7 +221,7 @@ export const CheckoutForm = ({
           id="name"
           name="name"
           placeholder="الاسم الكامل "
-          className="mt-1 p-2 w-full border rounded-md"
+          className="mt-1 p-2 w-full border "
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.name}
@@ -242,7 +242,7 @@ export const CheckoutForm = ({
           id="phone"
           name="phone"
           placeholder=" رقم الهاتف"
-          className="mt-1 p-2 w-full border rounded-md"
+          className="mt-1 p-2 w-full border "
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.phone}
@@ -332,7 +332,7 @@ export const CheckoutForm = ({
           name="notes"
           rows="3"
           placeholder=" أي تعليمات خاصة..."
-          className="mt-1 p-2 w-full border rounded-md"
+          className="mt-1 p-2 w-full border "
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.notes}
@@ -354,7 +354,7 @@ export const CheckoutForm = ({
       <button
         type="submit"
         disabled={loading}
-        className={`animate-bounce w-full flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg p-2 hover:bg-purple-900 transition active:scale-95 ${
+        className={`animate-bounce w-full flex items-center justify-center gap-4 bg-green-800 text-white  p-2 hover:bg-green-900 transition active:scale-95 ${
           loading ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
