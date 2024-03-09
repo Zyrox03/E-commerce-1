@@ -34,7 +34,7 @@ const OrderSuccess = () => {
         style={{ marginTop: "10em" }}
         className="flex flex-col gap-4 items-center justify-center p-6 text-center "
       >
-        <h1 className="text-4xl font-bold text-green-800 mb-4">
+        <h1 className="text-4xl font-bold text-purple-800 mb-4">
           شكرًا لطلبك!
         </h1>
         <p className="text-gray-600">
@@ -44,7 +44,7 @@ const OrderSuccess = () => {
         <span>{order_id} </span>
 
         <Link to="/">
-          <button className="bg-green-800 flex w-full justify-center items-center gap-2 text-white disabled:bg-green-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-blue">
+          <button className="bg-purple-800 flex w-full justify-center items-center gap-2 text-white disabled:bg-purple-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-purple-600 focus:outline-none focus:shadow-outline-blue">
             <i className="fa-solid fa-hand-point-left"></i>{" "}
             <p className="text-lg font-bold">العودة</p>
           </button>

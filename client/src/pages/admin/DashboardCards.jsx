@@ -54,7 +54,7 @@ const DashboardCards = () => {
             <Link
               key={index}
               to={path}
-              className="p-4 bg-green-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+              className="p-4 bg-purple-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
             >
               {icon}
               <h2 className=" text-xl font-bold mt-2">{title}</h2>
@@ -64,7 +64,7 @@ const DashboardCards = () => {
 
       <Link
         to="/"
-        className="p-4 bg-green-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+        className="p-4 bg-purple-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
       >
         <i className="fa-solid fa-home"></i>
         <h2 className=" text-xl font-bold mt-2">Magasin</h2>

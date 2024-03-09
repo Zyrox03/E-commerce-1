@@ -27,7 +27,7 @@ export const Feature = () => {
         className="flex flex-col items-center justify-center lg:p-4"
         id="feature"
       >
-        <div className="bg-green-400/50 rounded-2xl w-[80%] min-h-[400px] flex flex-col-reverse lg:flex-row items-center p-4 gap-4 relative overflow-hidden">
+        <div className="bg-purple-400/50 rounded-2xl w-[80%] min-h-[400px] flex flex-col-reverse lg:flex-row items-center p-4 gap-4 relative overflow-hidden">
           <img
             className="absolute h-full object-cover w-full z-0 opacity-[0.5] "
             src="https://static.vecteezy.com/system/resources/thumbnails/011/577/787/small/3d-rendered-colorful-confetti-with-fun-color-png.png"
@@ -48,9 +48,9 @@ export const Feature = () => {
             dir="rtl"
             className="flex-1 flex flex-col items-center lg:items-start  gap-6 justify-around z-10"
           >
-            <h2 className="text-xl font-bold text-green-800">عرض خاص</h2>
+            <h2 className="text-xl font-bold text-purple-800">عرض خاص</h2>
             {parseFloat(product?.oldPrice) > 0 && deduction > 0 && (
-              <span className="text-2xl lg:text-4xl font-bold bg-green-800 text-white p-2 w-fit rounded-lg shadow-xl">
+              <span className="text-2xl lg:text-4xl font-bold bg-purple-800 text-white p-2 w-fit rounded-lg shadow-xl">
                 تخفيض {deduction}%{" "}
               </span>
             )}

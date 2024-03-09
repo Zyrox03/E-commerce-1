@@ -57,6 +57,11 @@ app.use("/orders", ordersRoutes);
 const userEmail = process.env.ADMIN_EMAIL;
 const userPasswordHash = process.env.ADMIN_PASSWORD_HASH;
 
+// const getHashedPassword = async()=> {
+//   const hashed = await bcrypt.hash('zitouniahmed585',10)
+//   console.log(hashed)
+// }
+// getHashedPassword()
 
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;

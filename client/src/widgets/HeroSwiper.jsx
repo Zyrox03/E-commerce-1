@@ -43,7 +43,7 @@ export const HeroSwiper = () => {
       <div className="swiper-wrapper">
         <div className="swiper-slide">
           <img
-            src="https://res.cloudinary.com/duh30yscb/image/upload/v1709677557/WeddingSuitsMenDZ/y5lcecyimbskmhkq1spw.webp"
+            src="https://res.cloudinary.com/duh30yscb/image/upload/v1709995809/WeddingSuitsMenDZ/okzqxyritz8pdwoti1d7.webp"
             alt="hero image"
             className=" object-cover inset-0 h-full w-full"
           />

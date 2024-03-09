@@ -220,7 +220,7 @@ const ProductDetails = () => {
                 smooth={true}
                 offset={-400}
               >
-                <button className="lg:hidden w-full flex items-center justify-center gap-4 bg-green-800 text-white p-2 hover:bg-green-900 transition active:scale-95">
+                <button className="lg:hidden w-full flex items-center justify-center gap-4 bg-purple-800 text-white p-2 hover:bg-purple-900 transition active:scale-95">
                   <i className="text-lg fa-solid fa-shopping-cart"></i>
                   <p className="text-lg font-bold">شراء</p>
                 </button>
@@ -229,7 +229,7 @@ const ProductDetails = () => {
                 dir="rtl"
                 className="flex h-fit w-full items-center flex-wrap gap-2"
               >
-                <h2 className="text-xl md:text-4xl font-bold text-green-800 ml-2">
+                <h2 className="text-xl md:text-4xl font-bold text-purple-800 ml-2">
                   {product?.price} DA
                 </h2>
                 {parseFloat(product?.oldPrice) > 0 && (
@@ -241,7 +241,7 @@ const ProductDetails = () => {
                     {deduction > 0 && (
                       <div
                         style={{ whiteSpace: "nowrap" }}
-                        className="ml-12 bg-green-800 text-white py-1 px-2 font-bold"
+                        className="ml-12 bg-purple-800 text-white py-1 px-2 font-bold"
                       >
                         {deduction}% تخفيض
                       </div>
@@ -250,7 +250,7 @@ const ProductDetails = () => {
                 )}
               </div>
               <div className="flex h-fit w-full items-end flex-col ">
-                <h2 className="text-3xl mb-4 text-green-700 underline font-bold">
+                <h2 className="text-3xl mb-4 text-purple-700 underline font-bold">
                   
                     المواصفات{" "}
                   
@@ -266,14 +266,14 @@ const ProductDetails = () => {
                 <>
                   {product && uniqueColors?.length > 0 && (
                     <div dir="rtl" className="flex flex-col gap-3 ">
-                      <h2 className="text-3xl mb-4 text-green-700 underline">اللون:</h2>
+                      <h2 className="text-3xl mb-4 text-purple-700 underline">اللون:</h2>
                       <div className="flex flex-wrap gap-3">
                         {uniqueColors.map((colorObj, index) => (
                           <div
                             key={index}
                             className={`circle cursor-pointer w-16 h-16 border border-2 transition  ${
                               selectedOptions.color === colorObj.productColor
-                                ? "bg-green-200 border-green-800 p-1"
+                                ? "bg-purple-200 border-purple-800 p-1"
                                 : "bg-slate-200"
                             } `}
                             onClick={() =>
@@ -292,7 +292,7 @@ const ProductDetails = () => {
                             {selectedOptions.color ===
                               colorObj.productColor && (
                               <div className="transform text-center">
-                                <i className="fas fa-check text-green-500"></i>
+                                <i className="fas fa-check text-purple-500"></i>
                               </div>
                             )}
                           </div>
@@ -310,21 +310,21 @@ const ProductDetails = () => {
                     <div dir="rtl" className="flex flex-col gap-3 ">
                       {product && product.size.length > 0 && (
                         <div>
-                          <h2 className="text-3xl mb-4 text-green-700 text-green-700 underline">الطول:</h2>
+                          <h2 className="text-3xl mb-4 text-purple-700 text-purple-700 underline">الطول:</h2>
                           <div className="flex flex-wrap gap-3">
                             {product.size.map((size, index) => (
                               <div
                                 key={index}
                                 className={`cursor-pointer min-w-[50px] p-2 h-10 border border-2 ${
                                   selectedOptions.size === size
-                                    ? "bg-green-600 text-white relative"
-                                    : "bg-slate-200 border border-green-500 text-gray-700"
+                                    ? "bg-purple-600 text-white relative"
+                                    : "bg-slate-200 border border-purple-500 text-gray-700"
                                 } flex justify-center gap-2 items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95`}
                                 onClick={() => handleSizeClick(size)}
                               >
                                 {selectedOptions.size === size && (
                                   <div className="transform">
-                                    <i className="fas fa-check text-green-500"></i>
+                                    <i className="fas fa-check text-purple-500"></i>
                                   </div>
                                 )}
                                 <span>{size}</span>
@@ -343,10 +343,10 @@ const ProductDetails = () => {
                   )}
 
                   <div dir="rtl" id="variants" className="flex flex-col gap-3 ">
-                    <h2 className="text-3xl mb-4 text-green-700 underline">الكمية:</h2>
+                    <h2 className="text-3xl mb-4 text-purple-700 underline">الكمية:</h2>
                     <div className="flex gap-3 items-center">
                       <div
-                        className="cursor-pointer bg-green-600 w-10 h-10 border border-2 border-green-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
+                        className="cursor-pointer bg-purple-600 w-10 h-10 border border-2 border-purple-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
                         onClick={handleDecrement}
                       >
                         <i className="fas fa-minus text-white"></i>
@@ -357,7 +357,7 @@ const ProductDetails = () => {
                       </span>
 
                       <div
-                        className="cursor-pointer bg-green-600 w-10 h-10 border border-2 border-green-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
+                        className="cursor-pointer bg-purple-600 w-10 h-10 border border-2 border-purple-500 flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-110 active:scale-95"
                         onClick={handleIncrement}
                       >
                         <i className="fas fa-plus text-white"></i>

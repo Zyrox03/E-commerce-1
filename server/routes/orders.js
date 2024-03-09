@@ -55,7 +55,7 @@ router.post("/", async (req, res) => {
     // Respond with the saved order data
     res.status(201).json({ savedOrder });
 
-    const emailSubject = "Nouvelle Commande - Top Shoes DZ";
+    const emailSubject = "Nouvelle Commande - ElASALA AZ";
     const emailBody = `
         <html>
           <head>

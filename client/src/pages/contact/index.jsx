@@ -188,7 +188,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className={`flex w-full items-center justify-center gap-4 bg-green-800 text-white  p-2 hover:bg-green-900 transition active:scale-95 ${
+            className={`flex w-full items-center justify-center gap-4 bg-purple-800 text-white  p-2 hover:bg-purple-900 transition active:scale-95 ${
               formik.isSubmitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
             disabled={formik.isSubmitting}
@@ -203,7 +203,7 @@ const Contact = () => {
           )}
 
           {contactSuccess && (
-            <div className="text-green-600 max-w-md mx-auto text-center my-4 bg-green-100 p-3 ">
+            <div className="text-purple-600 max-w-md mx-auto text-center my-4 bg-purple-100 p-3 ">
               {contactSuccess}
             </div>
           )}

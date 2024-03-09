@@ -129,9 +129,9 @@ const SpecialOffer = () => {
           products.map((product, index) => (
             <div
               key={index}
-              className={`w-40 rounded-xl p-2 hover:bg-green-500 cursor-pointer transition flex flex-col gap-2 ${
+              className={`w-40 rounded-xl p-2 hover:bg-purple-500 cursor-pointer transition flex flex-col gap-2 ${
                 specialProduct?._id === product._id
-                  ? "text-white bg-green-700"
+                  ? "text-white bg-purple-700"
                   : "text-black bg-slate-200"
               }`}
               onClick={() => openSpecial(product)}
@@ -219,7 +219,7 @@ const SpecialOffer = () => {
             <Link to="/admin/products/new">
               <button
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-4 bg-green-800 text-white rounded-lg py-2 px-4 hover:bg-green-900 transition disabled:scale-100 disabled:bg-green-400 active:scale-95"
+                className="w-full flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg py-2 px-4 hover:bg-purple-900 transition disabled:scale-100 disabled:bg-purple-400 active:scale-95"
               >
                 <i className="text-lg fa-solid fa-plus"></i>
                 <p className="text-lg font-bold">Ajouter un Produit</p>

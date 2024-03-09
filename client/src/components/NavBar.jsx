@@ -72,20 +72,20 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
       <ul className="hidden lg:flex items-center flex-row-reverse justify-around flex-1">
         {isLanding ? (
           <LinkScroll to={"hero"} spy={true} smooth={true} offset={0}>
-            <li className="hover:text-green-700 cursor-pointer font-bold transition">
+            <li className="hover:text-purple-700 cursor-pointer font-bold transition">
               الصفحة الرئيسية
             </li>
           </LinkScroll>
         ) : (
           <Link to="/">
-            <li className="hover:text-green-700 cursor-pointer font-bold transition">
+            <li className="hover:text-purple-700 cursor-pointer font-bold transition">
               الصفحة الرئيسية
             </li>
           </Link>
         )}
 
         <Link to="/shop">
-          <li className="hover:text-green-700 cursor-pointer font-bold transition">
+          <li className="hover:text-purple-700 cursor-pointer font-bold transition">
             المتجر
           </li>
         </Link>
@@ -99,20 +99,20 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
               offset={-100}
               onClick={() => setOpenSideNav(false)}
             >
-              <li className="hover:text-green-700 cursor-pointer font-bold transition">
+              <li className="hover:text-purple-700 cursor-pointer font-bold transition">
                 عرض خاص
               </li>
             </LinkScroll>
           ) : (
             <Link to="/">
-              <li className="hover:text-green-700 cursor-pointer font-bold transition">
+              <li className="hover:text-purple-700 cursor-pointer font-bold transition">
                 عرض خاص
               </li>
             </Link>
           ))}
 
         <Link to="/contact">
-          <li className="hover:text-green-700 cursor-pointer font-bold transition">
+          <li className="hover:text-purple-700 cursor-pointer font-bold transition">
             اتصل بنا
           </li>
         </Link>
@@ -142,7 +142,8 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
       </div>
 
       <div onClick={() => setOpenSideNav(true)} className="flex lg:hidden">
-        <Button text="قائمة" icon="fa-solid fa-bars" />
+        <Button text={<i className="fa-solid fa-bars"></i>} icon="fa-solid fa-bars" />
+        
       </div>
     </nav>
   );

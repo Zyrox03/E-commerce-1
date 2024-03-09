@@ -354,7 +354,7 @@ export const CheckoutForm = ({
       <button
         type="submit"
         disabled={loading}
-        className={`animate-bounce w-full flex items-center justify-center gap-4 bg-green-800 text-white  p-2 hover:bg-green-900 transition active:scale-95 ${
+        className={`animate-bounce w-full flex items-center justify-center gap-4 bg-purple-800 text-white  p-2 hover:bg-purple-900 transition active:scale-95 ${
           loading ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >

@@ -26,7 +26,7 @@ export const DashboardNav = ({ activeLink, sidebar, setSidebar }) => {
         <div onClick={() => setDropDown(!dropdown)} className="">
           <img
             className="w-10 h-10 rounded-full cursor-pointer"
-            src="/logo.jpg"
+            src="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
             alt=""
           />
         </div>

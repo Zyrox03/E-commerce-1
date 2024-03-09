@@ -16,7 +16,7 @@ export const SideNav = ({ setOpenSideNav, openSideNav, isLanding }) => {
         onClick={() => setOpenSideNav(false)}
         className="flex justify-end py-4 px-8 w-full absolute"
       >
-        <i className="text-green-900 text-3xl fas fa-xmark cursor-pointer"></i>
+        <i className="text-purple-900 text-3xl fas fa-xmark cursor-pointer"></i>
       </div>
 
       <ul className="flex flex-col items-center w-full gap-6 justify-center">
@@ -28,20 +28,20 @@ export const SideNav = ({ setOpenSideNav, openSideNav, isLanding }) => {
             offset={0}
             onClick={() => setOpenSideNav(false)}
           >
-            <li className="text-3xl border-2 border-green-600 hover:bg-green-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
+            <li className="text-3xl border-2 border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
               الصفحة الرئيسية
             </li>
           </LinkScroll>
         ) : (
           <Link to="/">
-            <li className="text-3xl border-2 border-green-600 hover:bg-green-600 hover:text-white rounded-lg p-2  cursor-pointer font-bold transition">
+            <li className="text-3xl border-2 border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg p-2  cursor-pointer font-bold transition">
               الصفحة الرئيسية
             </li>
           </Link>
         )}
 
         <Link to="/shop">
-          <li className="text-3xl border-2 border-green-600 hover:bg-green-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
+          <li className="text-3xl border-2 border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
             المتجر
           </li>
         </Link>
@@ -55,20 +55,20 @@ export const SideNav = ({ setOpenSideNav, openSideNav, isLanding }) => {
               offset={-100}
               onClick={() => setOpenSideNav(false)}
             >
-              <li className="text-3xl border-2 border-green-600 hover:bg-green-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
+              <li className="text-3xl border-2 border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
                 عرض خاص
               </li>
             </LinkScroll>
           ) : (
             <Link to="/">
-              <li className="text-3xl border-2 border-green-600 hover:bg-green-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
+              <li className="text-3xl border-2 border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
                 عرض خاص
               </li>
             </Link>
           ))}
 
         <Link to="/contact">
-          <li className="text-3xl border-2 border-green-600 hover:bg-green-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
+          <li className="text-3xl border-2 border-purple-600 hover:bg-purple-600 hover:text-white rounded-lg p-2 min-w-64 text-center cursor-pointer font-bold transition">
             اتصل بنا
           </li>
         </Link>

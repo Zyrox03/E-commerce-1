@@ -16,9 +16,9 @@ body{
     position: relative;
     padding: 10px 24px;
     font-size: 18px;
-    color: #166534;
-    border: 2px solid #166534;
-    border-radius: 34px;
+    color: #7E22CE;
+    border: 2px solid #7E22CE;
+    border-radius: 10px;
     background-color: transparent;
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
@@ -35,7 +35,7 @@ body{
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: #166534;
+    background-color: #7E22CE;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -46,7 +46,7 @@ body{
   .primary_button:hover {
     color: #fff;
     scale: 1.1;
-    box-shadow: 0 0px 20px #166534;
+    box-shadow: 0 0px 20px #7E22CE;
   }
   
   .primary_button:active {

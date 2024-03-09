@@ -18,7 +18,7 @@ export const ProductCard = ({ product }) => {
         {/* discount tag */}
 
         {deduction > 0 && (
-          <div className="bg-green-800 text-white w-fit absolute top-6 right-6 px-2 font-bold  z-10">
+          <div className="bg-purple-800 text-white w-fit absolute top-6 right-6 px-2 font-bold  z-10">
             {deduction}% تخفيض
           </div>
         )}
@@ -39,10 +39,10 @@ export const ProductCard = ({ product }) => {
             DA {product.oldPrice}
           </span>
         )}{" "}
-        <span className="text-green-700">DA {product.price} </span>
+        <span className="text-purple-700">DA {product.price} </span>
       </p>
 
-      <button className="hidden w-full lg:flex items-center justify-center gap-4 bg-green-800 text-white p-2 hover:bg-green-900 transition active:scale-95">
+      <button className="hidden w-full lg:flex items-center justify-center gap-4 bg-purple-800 text-white p-2 hover:bg-purple-900 transition active:scale-95">
         {/* <i className="text-lg fa-solid fa-cart-plus"></i> */}
         <p className="text-lg font-bold">اشترِي الآن</p>
       </button>

@@ -26,7 +26,7 @@ export const Timer = ({ deadline }) => {
     );
   };
   return (
-    <div className="flex items-center gap-12 text-green-700">
+    <div className="flex items-center gap-12 text-purple-700">
       <Countdown date={deadline} renderer={renderer} />,
     </div>
   );

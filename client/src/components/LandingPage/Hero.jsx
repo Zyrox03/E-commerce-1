@@ -20,7 +20,7 @@ export const Hero = () => {
       <div className="p-4 flex flex-col items-start max-w-3xl text-start justify-center gap-12 relative z-10">
         <h1 className="text-5xl font-bold text-purple-100">
           {" "}
-          استكشفوا تشكيلتنا الفاخرة من أزياء الزفاف
+          استكشفوا تشكيلتنا الفاخرة من الأزياء الفاخرة
         </h1>
         <p className="text-md lg:text-xl text-white w-5/6">
           مرحبا بكم عند السيد زيتوني أحمد تاجر جملة و تجزئة في ملابس الرجال و

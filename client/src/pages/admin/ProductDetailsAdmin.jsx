@@ -461,10 +461,10 @@ const ProductDetailsAdmin = () => {
             </div>
 
             {deduction > 0 && (
-              <div className="mb-4 bg-slate-100 p-2 border border-green-500">
+              <div className="mb-4 bg-slate-100 p-2 border border-purple-500">
                 <span className=" ">
                   Le client aura{" "}
-                  <span className="font-bold text-green-500">
+                  <span className="font-bold text-purple-500">
                     {deduction}%{" "}
                   </span>
                   de déduction sur ce produit à l&apos;achat
@@ -548,7 +548,7 @@ const ProductDetailsAdmin = () => {
                     <div
                       key={index}
                       onClick={() => deleteImage(image.image.path)}
-                      className="w-[45%] h-40 bg-green-500 text-white hover:bg-red-500 transition cursor-pointer shadow-lg flex justify-center items-center rounded-xl p-2"
+                      className="w-[45%] h-40 bg-purple-500 text-white hover:bg-red-500 transition cursor-pointer shadow-lg flex justify-center items-center rounded-xl p-2"
                     >
                       <img
                         src={image.image.path || image.path}
@@ -560,7 +560,7 @@ const ProductDetailsAdmin = () => {
 
                 <div
                   onClick={() => setAddImageModal(true)}
-                  className="w-[45%] h-40 bg-green-500 text-white hover:bg-green-600 transition cursor-pointer shadow-lg flex justify-center items-center rounded-xl p-2"
+                  className="w-[45%] h-40 bg-purple-500 text-white hover:bg-purple-600 transition cursor-pointer shadow-lg flex justify-center items-center rounded-xl p-2"
                 >
                   <i className="fas fa-plus"></i>
                 </div>
@@ -600,7 +600,7 @@ const ProductDetailsAdmin = () => {
                 {formik.values.size.map((size) => (
                   <span
                     key={size}
-                    className="p-2 bg-green-500 text-white rounded-xl transition shadow-lg hover:bg-red-500 cursor-pointer"
+                    className="p-2 bg-purple-500 text-white rounded-xl transition shadow-lg hover:bg-red-500 cursor-pointer"
                     onClick={() => deleteSize(size)}
                   >
                     {" "}
@@ -713,7 +713,7 @@ const ProductDetailsAdmin = () => {
                 <button
                   type="button"
                   disabled={loading}
-                  className="bg-green-500 flex lg:w-96 justify-center items-center gap-2 text-white disabled:bg-green-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-blue"
+                  className="bg-purple-500 flex lg:w-96 justify-center items-center gap-2 text-white disabled:bg-purple-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-purple-600 focus:outline-none focus:shadow-outline-blue"
                 >
                   <span className="hidden lg:flex"> Voir le produit </span>
                   <i className="fa-solid fa-eye"></i>

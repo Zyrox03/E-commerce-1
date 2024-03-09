@@ -120,7 +120,7 @@ const Products = () => {
         <Link to="/admin/products/new">
           <button
             disabled={loading}
-            className="w-full flex items-center justify-center gap-4 bg-green-800 text-white rounded-lg py-2 px-4 hover:bg-green-900 transition disabled:scale-100 disabled:bg-green-400 active:scale-95"
+            className="w-full flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg py-2 px-4 hover:bg-purple-900 transition disabled:scale-100 disabled:bg-purple-400 active:scale-95"
           >
             <i className="text-lg fa-solid fa-plus"></i>
             <p className="text-lg font-bold">Ajouter un Produit</p>
@@ -169,7 +169,7 @@ const Products = () => {
                     <Link to={`/${slug}`}>
                       <button
                         onClick={() => openDelete(slug)}
-                        className="bg-green-600 text-white px-2 py-1 rounded "
+                        className="bg-purple-600 text-white px-2 py-1 rounded "
                       >
                         <i className="fa-solid fa-eye"></i>
                       </button>
