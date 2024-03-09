@@ -18,7 +18,10 @@ const SideNavDashboard = ({ setSidebar, activeLink, sidebar }) => {
       style={{ zIndex: 2 }}
     >
       <div
-        style={{ backgroundColor: "#1C2434" }}
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(15,64,46,1) 87%, rgba(22,101,52,1) 100%)",
+        }}
         className=" h-full rounded-xl text-white flex flex-col p-2"
       >
         <Link to="/">
@@ -28,7 +31,7 @@ const SideNavDashboard = ({ setSidebar, activeLink, sidebar }) => {
             }}
             className="p-4"
           >
-            <h1 className="text-2xl font-semibold">Top Shoe DZ</h1>
+            <h1 className="text-2xl font-semibold">Elasala AZ</h1>
           </div>
         </Link>
         <nav className="flex-1 flex flex-col gap-1 mt-6">
@@ -43,8 +46,8 @@ const SideNavDashboard = ({ setSidebar, activeLink, sidebar }) => {
                     setSidebar(false);
                   }}
                   className={`${
-                    activeLink === title ? "bg-purple-800" : ""
-                  } flex w-full items-center justify-start gap-4 text-white rounded-lg py-2 px-4 active:scale-95 block py-2  text-white transition hover:bg-purple-700`}
+                    activeLink === title ? "bg-green-800" : ""
+                  } flex w-full items-center justify-start gap-4 text-white rounded-lg py-2 px-4 active:scale-95 block py-2  text-white transition hover:bg-green-700`}
                 >
                   {icon}
                   <p className="text-lg font-bold text-start">{title} </p>
@@ -56,7 +59,7 @@ const SideNavDashboard = ({ setSidebar, activeLink, sidebar }) => {
 
           <div
             onClick={() => dispatch(setAdmin(null))}
-            className={`cursor-pointer flex w-full items-center justify-start gap-4 text-white rounded-lg py-2 px-4 active:scale-95 block py-2  text-white transition hover:bg-purple-700`}
+            className={`cursor-pointer flex w-full items-center justify-start gap-4 text-white rounded-lg py-2 px-4 active:scale-95 block py-2  text-white transition hover:bg-green-700`}
           >
             <i className="fa-solid fa-right-from-bracket"></i>{" "}
             <p className="text-lg font-bold text-start">Déconnexion </p>

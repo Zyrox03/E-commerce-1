@@ -65,43 +65,43 @@ const Products = () => {
   return (
     <div className="container mx-auto">
       <Helmet>
-        <title>  أزياء العرائس  - Gestion des Produits</title>
+        <title> ELASALA AZ - Gestion des Produits</title>
         <meta
           name="description"
-          content="Gérez efficacement les produits sur le portail administratif de   أزياء العرائس . Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
+          content="Gérez efficacement les produits sur le portail administratif de  ELASALA AZ. Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
         <meta
           property="og:title"
-          content="  أزياء العرائس  - Gestion des Produits"
+          content=" ELASALA AZ - Gestion des Produits"
         />
         <meta
           property="og:description"
-          content="Gérez efficacement les produits sur le portail administratif de   أزياء العرائس . Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
+          content="Gérez efficacement les produits sur le portail administratif de  ELASALA AZ. Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
         <meta
           property="og:url"
-          content="https://topshoes-dz.pages.dev/admin/products"
+          content="https://elasala-az.pages.dev/admin/products"
         />
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="  أزياء العرائس  - Gestion des Produits"
+          content=" ELASALA AZ - Gestion des Produits"
         />
         <meta
           name="twitter:description"
-          content="Gérez efficacement les produits sur le portail administratif de   أزياء العرائس . Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
+          content="Gérez efficacement les produits sur le portail administratif de  ELASALA AZ. Ajoutez, modifiez ou supprimez des produits pour maintenir un inventaire à jour."
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
 
         {/* Balises méta supplémentaires */}
@@ -120,7 +120,7 @@ const Products = () => {
         <Link to="/admin/products/new">
           <button
             disabled={loading}
-            className="w-full flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg py-2 px-4 hover:bg-purple-900 transition disabled:scale-100 disabled:bg-purple-400 active:scale-95"
+            className="w-full flex items-center justify-center gap-4 bg-green-800 text-white rounded-lg py-2 px-4 hover:bg-green-900 transition disabled:scale-100 disabled:bg-green-400 active:scale-95"
           >
             <i className="text-lg fa-solid fa-plus"></i>
             <p className="text-lg font-bold">Ajouter un Produit</p>
@@ -169,7 +169,7 @@ const Products = () => {
                     <Link to={`/${slug}`}>
                       <button
                         onClick={() => openDelete(slug)}
-                        className="bg-purple-600 text-white px-2 py-1 rounded "
+                        className="bg-green-600 text-white px-2 py-1 rounded "
                       >
                         <i className="fa-solid fa-eye"></i>
                       </button>

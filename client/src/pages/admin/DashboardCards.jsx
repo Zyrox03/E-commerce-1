@@ -7,34 +7,34 @@ const DashboardCards = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
 
 <Helmet>
-        <title>  أزياء العرائس  - Espace Admin</title>
+        <title> ELASALA AZ - Espace Admin</title>
         <meta
           name="description"
-          content="Espace d'administration réservé aux administrateurs de   أزياء العرائس . Gérez les produits, les commandes et les paramètres du site."
+          content="Espace d'administration réservé aux administrateurs de  ELASALA AZ. Gérez les produits, les commandes et les paramètres du site."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="  أزياء العرائس  - Espace Admin" />
+        <meta property="og:title" content=" ELASALA AZ - Espace Admin" />
         <meta
           property="og:description"
-          content="Espace d'administration réservé aux administrateurs de   أزياء العرائس . Gérez les produits, les commandes et les paramètres du site."
+          content="Espace d'administration réservé aux administrateurs de  ELASALA AZ. Gérez les produits, les commandes et les paramètres du site."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
-        <meta property="og:url" content="https://topshoes-dz.pages.dev/admin" />
+        <meta property="og:url" content="https://elasala-az.pages.dev/admin" />
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="  أزياء العرائس  - Espace Admin" />
+        <meta name="twitter:title" content=" ELASALA AZ - Espace Admin" />
         <meta
           name="twitter:description"
-          content="Espace d'administration réservé aux administrateurs de   أزياء العرائس . Gérez les produits, les commandes et les paramètres du site."
+          content="Espace d'administration réservé aux administrateurs de  ELASALA AZ. Gérez les produits, les commandes et les paramètres du site."
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
 
         {/* Balises méta supplémentaires */}
@@ -54,7 +54,7 @@ const DashboardCards = () => {
             <Link
               key={index}
               to={path}
-              className="p-4 bg-purple-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+              className="p-4 bg-green-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
             >
               {icon}
               <h2 className=" text-xl font-bold mt-2">{title}</h2>
@@ -64,7 +64,7 @@ const DashboardCards = () => {
 
       <Link
         to="/"
-        className="p-4 bg-purple-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+        className="p-4 bg-green-600 text-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
       >
         <i className="fa-solid fa-home"></i>
         <h2 className=" text-xl font-bold mt-2">Magasin</h2>

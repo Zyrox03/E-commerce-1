@@ -4,5 +4,4 @@ export const Button = ({ text }) => {
 };
 Button.propTypes = {
   text: PropTypes.string,
-  icon: PropTypes.string,
 };

@@ -1,5 +1,5 @@
 import { NavBar } from "../../components/NavBar";
-import { SideNav } from "../../components/sideNav";
+import { SideNav } from "../../components/SideNav";
 import { Footer } from "../../components/Footer";
 import { useEffect, useState } from "react";
 import { Title } from "../../widgets/Title";
@@ -41,7 +41,7 @@ const Cart = () => {
                 smooth={true}
                 offset={-100}
               >
-                <button className=" flex items-center justify-center gap-4 bg-purple-800 text-white rounded-lg p-2 hover:bg-purple-900 transition active:scale-95">
+                <button className=" flex items-center justify-center gap-4 bg-green-800 text-white rounded-lg p-2 hover:bg-green-900 transition active:scale-95">
                   <i className="text-lg fa-solid fa-clipboard"></i>
                   <p className="text-lg font-bold">Checkout</p>
                 </button>
@@ -55,7 +55,7 @@ const Cart = () => {
                     className="bg-slate-200 flex gap-4 shadow-md p-4 rounded-lg relative"
                   >
                     <div className="absolute bottom-0 right-0 w-10 h-10 rounded-2xl rounded-br-none bg-slate-100 cursor-pointer flex items-center justify-center">
-                      <i className="fa-solid fa-trash text-purple-800"></i>
+                      <i className="fa-solid fa-trash text-green-800"></i>
                     </div>
                     <div className="flex-shrink-0 my-auto ">
                       <img

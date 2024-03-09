@@ -72,37 +72,37 @@ const Auth = () => {
   return (
     <div className="bg-[#edf2f4] flex flex-col relative overflow-hidden">
       <Helmet>
-        <title>  أزياء العرائس  - Connexion</title>
+        <title>  ELASALA AZ - Connexion</title>
         <meta
           name="description"
-          content="Connectez-vous ou inscrivez-vous sur   أزياء العرائس  pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
+          content="Connectez-vous ou inscrivez-vous sur   ELASALA AZ pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="  أزياء العرائس  - Connexion" />
+        <meta property="og:title" content="  ELASALA AZ - Connexion" />
         <meta
           property="og:description"
-          content="Connectez-vous ou inscrivez-vous sur   أزياء العرائس  pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
+          content="Connectez-vous ou inscrivez-vous sur   ELASALA AZ pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
         <meta
           property="og:url"
-          content="https://topshoes-dz.pages.dev/account"
+          content="https://elasala-az.pages.dev/account"
         />
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="  أزياء العرائس  - Connexion" />
+        <meta name="twitter:title" content="  ELASALA AZ - Connexion" />
         <meta
           name="twitter:description"
-          content="Connectez-vous ou inscrivez-vous sur   أزياء العرائس  pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
+          content="Connectez-vous ou inscrivez-vous sur   ELASALA AZ pour accéder à votre compte, gérer vos commandes et profiter d'offres exclusives."
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
 
         {/* Balises méta supplémentaires */}

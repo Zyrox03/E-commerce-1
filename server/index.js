@@ -32,7 +32,7 @@ app.use(
   helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
 );
 const corsOptions = {
-  origin: "https://azyaa-al-araais.pages.dev",
+  origin: "https://elasala-az.pages.dev",
 };
 
 app.use(cors(corsOptions));
@@ -116,9 +116,6 @@ app.post("/login", async (req, res) => {
       <div class="container">
         <h2>Notification de nouvelle connexion</h2>
         <p>Une connexion réussie a été enregistrée sur le compte avec l'adresse e-mail : ${email}</p>
-        <p>
-          Pour des raisons de sécurité, si vous n'avez pas effectué cette connexion, veuillez contacter Said Bara immédiatement au 0781441049.
-        </p>
         <div class="footer">
           <p>Cordialement,</p>
           <p>Votre équipe de sécurité</p>

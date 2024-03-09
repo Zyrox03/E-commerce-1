@@ -54,9 +54,7 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
         </Link>
       )}
 
-      
-
-<div className="flex items-center  flex-1">
+      <div className="flex items-center  flex-1">
         {/* <i className="text-xl fa-solid fa-cart-shopping ml-auto"></i> */}
         <div className="mr-auto flex gap-2 text-black">
           {isAdmin ? (
@@ -68,11 +66,9 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
               <Button text="حسابي" icon="fa-solid fa-user" />
             </Link>
           )}
-
-         
         </div>
       </div>
-      
+
       <ul className="hidden lg:flex items-center flex-row-reverse justify-around flex-1">
         {isLanding ? (
           <LinkScroll to={"hero"} spy={true} smooth={true} offset={0}>
@@ -129,7 +125,7 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
                 isScrolled ? "text-slate-800" : "text-white-800"
               } `}
             >
-              أزياء العرائس
+              Elasala AZ
             </h1>
           </LinkScroll>
         ) : (
@@ -139,15 +135,15 @@ export const NavBar = ({ setOpenSideNav, isLanding }) => {
                 isScrolled ? "text-slate-800" : "text-white-800"
               } `}
             >
-              أزياء العرائس
+              Elasala AZ
             </h1>
           </Link>
         )}
       </div>
 
       <div onClick={() => setOpenSideNav(true)} className="flex lg:hidden">
-            <Button text="قائمة" icon="fa-solid fa-bars" />
-          </div>
+        <Button text="قائمة" icon="fa-solid fa-bars" />
+      </div>
     </nav>
   );
 };

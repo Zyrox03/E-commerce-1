@@ -110,9 +110,8 @@ router.post("/", async (req, res) => {
         <p class="preserve-space">Notes: <br/> ${notes}</p>
 
               <div class="footer">
-                <p>Merci pour votre commande!</p>
                 <p>Cette notification est envoyée au propriétaire du magasin.</p>
-                <p>TopShoes</p>
+                <p>ELASALA AZ</p>
               </div>
             </div>
           </body>

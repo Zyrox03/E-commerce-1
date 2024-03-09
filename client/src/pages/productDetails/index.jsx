@@ -310,7 +310,7 @@ const ProductDetails = () => {
                     <div dir="rtl" className="flex flex-col gap-3 ">
                       {product && product.size.length > 0 && (
                         <div>
-                          <h2 className="text-3xl mb-4 text-green-700 text-green-700 underline">المقاس:</h2>
+                          <h2 className="text-3xl mb-4 text-green-700 text-green-700 underline">الطول:</h2>
                           <div className="flex flex-wrap gap-3">
                             {product.size.map((size, index) => (
                               <div

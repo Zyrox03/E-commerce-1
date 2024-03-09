@@ -74,37 +74,37 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-[#edf2f4] flex flex-col relative overflow-hidden">
       <Helmet>
-        <title>  أزياء العرائس  - Contactez-nous</title>
+        <title>  ELASALA AZ - Contactez-nous</title>
         <meta
           name="description"
           content="Contactez-nous pour toute question ou préoccupation. Nous sommes là pour vous aider!"
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-        <meta property="og:title" content="  أزياء العرائس  - Contactez-nous" />
+        <meta property="og:title" content="  ELASALA AZ - Contactez-nous" />
         <meta
           property="og:description"
           content="Contactez-nous pour toute question ou préoccupation. Nous sommes là pour vous aider!"
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
         <meta
           property="og:url"
-          content="https://topshoes-dz.pages.dev/contact"
+          content="https://elasala-az.pages.dev/contact"
         />
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="  أزياء العرائس  - Contactez-nous" />
+        <meta name="twitter:title" content="  ELASALA AZ - Contactez-nous" />
         <meta
           name="twitter:description"
           content="Contactez-nous pour toute question ou préoccupation. Nous sommes là pour vous aider!"
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
 
         {/* Balises méta supplémentaires */}

@@ -11,10 +11,10 @@ export const ProductCard = ({ product }) => {
   return (
     <Link
       to={`/${product.slug}`}
-      className="flex flex-col items-center gap-2 w-[10em] lg:w-[20em] p-4  bg-slate-100  relative shadow-lg"
+      className="flex flex-col items-center gap-2 w-[90%] h-[60vh] lg:h-full   lg:w-[20em] p-2 lg:p-4  bg-slate-100  relative shadow-lg "
       dir="rtl"
     >
-      <div className="overflow-hidden rounded-lg w-full">
+      <div className="overflow-hidden rounded-lg w-full h-full">
         {/* discount tag */}
 
         {deduction > 0 && (
@@ -28,7 +28,7 @@ export const ProductCard = ({ product }) => {
             "https://content.optimumnutrition.com/i/on/C100969_Image_01?layer0=$PDP$"
           }
           alt="product image"
-          className="w-full h-[150px] lg:h-[350px] object-cover hover:scale-105 duration-300 transition"
+          className="w-full h-full lg:h-[350px] object-cover hover:scale-105 duration-300 transition"
         />
       </div>
 

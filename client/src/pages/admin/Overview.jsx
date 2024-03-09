@@ -44,20 +44,20 @@ const Overview = () => {
     <>
 
 <Helmet>
-  <title>  أزياء العرائس  - Aperçu Administrateur</title>
-  <meta name="description" content="Accédez à l'aperçu administrateur de   أزياء العرائس  pour gérer l'inventaire, surveiller les ventes et administrer les opérations du magasin." />
+  <title>ELASALA AZ - Aperçu Administrateur</title>
+  <meta name="description" content="Accédez à l'aperçu administrateur de ELASALA AZ pour gérer l'inventaire, surveiller les ventes et administrer les opérations du magasin." />
 
   {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
-  <meta property="og:title" content="  أزياء العرائس  - Aperçu Administrateur" />
-  <meta property="og:description" content="Accédez à l'aperçu administrateur de   أزياء العرائس  pour gérer l'inventaire, surveiller les ventes et administrer les opérations du magasin." />
-  <meta property="og:image" content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg" />
+  <meta property="og:title" content="ELASALA AZ - Aperçu Administrateur" />
+  <meta property="og:description" content="Accédez à l'aperçu administrateur de ELASALA AZ pour gérer l'inventaire, surveiller les ventes et administrer les opérations du magasin." />
+  <meta property="og:image" content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg" />
   <meta property="og:url" content="2/overview" />
 
   {/* Balises Twitter Card pour le partage sur Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="  أزياء العرائس  - Aperçu Administrateur" />
-  <meta name="twitter:description" content="Accédez à l'aperçu administrateur de   أزياء العرائس  pour gérer l'inventaire, surveiller les ventes et administrer les opérations du magasin." />
-  <meta name="twitter:image" content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg" />
+  <meta name="twitter:title" content="ELASALA AZ - Aperçu Administrateur" />
+  <meta name="twitter:description" content="Accédez à l'aperçu administrateur de ELASALA AZ pour gérer l'inventaire, surveiller les ventes et administrer les opérations du magasin." />
+  <meta name="twitter:image" content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg" />
 
   {/* Balises méta supplémentaires */}
   <meta name="keywords" content="aperçu administrateur, gestion d'inventaire, suivi des ventes, opérations du magasin" />

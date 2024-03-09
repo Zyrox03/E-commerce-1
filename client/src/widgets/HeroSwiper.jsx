@@ -57,7 +57,6 @@ export const HeroSwiper = () => {
           />
         </div>
       </div>
-      <div className="swiper-pagination"></div>
     </div>
   );
 };

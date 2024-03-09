@@ -11,7 +11,7 @@ import DashboardCards from "./pages/admin/DashboardCards";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "./toolkit/productSlice";
 import Auth from "./pages/auth";
-
+import loadingLogo from './assets/loadingLogo.gif'
 // eslint-disable-next-line react/prop-types
 const AdminRoute = ({ element }) => {
   const isAdmin = useSelector((state) => state.auth.admin);
@@ -37,7 +37,7 @@ function App() {
 
   if (!products) {
     return <div className="h-screen w-full flex justify-center items-center">
-      <img src="/logo.jpg" className="max-w-32" alt="store logo" />
+      <img src={loadingLogo} className="max-w-32" alt="loading logo" />
     </div>;
   }
 

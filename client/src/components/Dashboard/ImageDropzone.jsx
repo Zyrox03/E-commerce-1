@@ -10,7 +10,7 @@ const ImageDropzone = ({ onDrop, uploadedImages, loading }) => {
     
   
     return (
-        <div className="w-full bg-purple-500 shadow-lg  rounded-xl p-2">
+        <div className="w-full bg-green-500 shadow-lg  rounded-xl p-2">
         <div {...getRootProps()} className="border-dashed border-2 p-4 rounded-md cursor-pointer">
           <input {...getInputProps()} />
           <p className="text-slate-100 text-center">Drag & drop or click to add images</p>

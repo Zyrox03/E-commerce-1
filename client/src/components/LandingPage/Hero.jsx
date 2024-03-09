@@ -23,13 +23,14 @@ export const Hero = () => {
           استكشفوا تشكيلتنا الفاخرة من أزياء الزفاف
         </h1>
         <p className="text-md lg:text-xl text-white w-5/6">
-          أضيفوا لمسة أناقة إلى أناقتكم مع مجموعتنا المتنوعة والمريحة من أزياء
-          الزفاف. سواء كنتم تبحثون عن أطقم رسمية أو أنيقة، لدينا التصميم المثالي
-          لكل لحظة خاصة. اكتشفوا أحدث التصاميم لدينا وانطلقوا بثقة مع Top Suit
-          DZ.
+          مرحبا بكم عند السيد زيتوني أحمد تاجر جملة و تجزئة في ملابس الرجال و
+          النساء و مختص في بيع و كراء ملابس الأعراس …تحياتي.
         </p>
         <LinkScroll to={"all-products"} spy={true} smooth={true} offset={-80}>
-          <Button text={<i className="fa-solid fa-arrow-down"></i>} icon="fa-solid fa-arrow-down" />
+          <Button
+            text={<i className="fa-solid fa-arrow-down"></i>}
+            icon="fa-solid fa-arrow-down"
+          />
         </LinkScroll>
       </div>
     </div>

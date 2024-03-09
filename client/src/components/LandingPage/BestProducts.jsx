@@ -9,8 +9,8 @@ export const BestProducts = ({ productsList }) => {
   return (
     <div className="flex flex-col items-center gap-12 p-8" id="best-selling">
       <Title
-        title="أفضل المبيعات"
-        sub_title="انضموا إلى الأناقة مع اختيارنا الدقيق من أحدث وأكثر الأنماط مبيعًا بعناية"
+        title="قد يعجبك أيضا"
+        sub_title="انضموا إلى الأناقة مع اختيارنا الدقيق من أحدث وأكثر الأنماط مبيعًا "
       />
       {productsList.length > 0 ? (
         <div className="flex justify-around items-center gap-12 flex-wrap">

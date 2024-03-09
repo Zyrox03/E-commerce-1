@@ -75,33 +75,33 @@ export const CheckoutForm = ({
           { ...values, deliveryOption }
         );
 
-        const { savedOrder } = response.data;
+        // const { savedOrder } = response.data;
 
-        fbq("track", "Purchase", {
-          currency: "DZD",
-          value: savedOrder.orderTotal,
-          content_name: savedOrder.productInfo.name,
-          contents: [
-            {
-              id: savedOrder.productInfo.slug,
-              quantity: savedOrder.quantity,
-              price: savedOrder.productInfo.price,
-              variantes: {
-                couleur: savedOrder.color || "null",
-                pointure: savedOrder.size || "null",
-              },
-              livraison: savedOrder?.deliveryOption,
-              info_du_client: {
-                nom: savedOrder.name,
-                téléphone: savedOrder.phone,
-                adresse: {
-                  wilaya: savedOrder?.wilaya,
-                  baladiya: savedOrder?.baladiya,
-                },
-              },
-            },
-          ],
-        });
+        // fbq("track", "Purchase", {
+        //   currency: "DZD",
+        //   value: savedOrder.orderTotal,
+        //   content_name: savedOrder.productInfo.name,
+        //   contents: [
+        //     {
+        //       id: savedOrder.productInfo.slug,
+        //       quantity: savedOrder.quantity,
+        //       price: savedOrder.productInfo.price,
+        //       variantes: {
+        //         couleur: savedOrder.color || "null",
+        //         pointure: savedOrder.size || "null",
+        //       },
+        //       livraison: savedOrder?.deliveryOption,
+        //       info_du_client: {
+        //         nom: savedOrder.name,
+        //         téléphone: savedOrder.phone,
+        //         adresse: {
+        //           wilaya: savedOrder?.wilaya,
+        //           baladiya: savedOrder?.baladiya,
+        //         },
+        //       },
+        //     },
+        //   ],
+        // });
 
         setOrderSuccess(true);
       } catch (error) {
@@ -172,14 +172,14 @@ export const CheckoutForm = ({
         options.push({
           value: "bureau",
           label: "تسليم في المكتب",
-          deliveryPrice: parseInt(livraisonTarifs.bureau) - 200,
+          deliveryPrice: parseInt(livraisonTarifs.bureau),
         });
       }
 
       options.push({
         value: "domicile",
         label: "تسليم في المنزل",
-        deliveryPrice: parseInt(livraisonTarifs.domicile) - 200,
+        deliveryPrice: parseInt(livraisonTarifs.domicile),
       });
 
       setDeliveryOptions(options);

@@ -83,43 +83,43 @@ const Orders = () => {
   return (
     <div className="container mx-auto">
       <Helmet>
-        <title>  أزياء العرائس  - Gestion des Commandes</title>
+        <title> ELASALA AZ - Gestion des Commandes</title>
         <meta
           name="description"
-          content="Consultez et gérez les commandes sur le portail administratif de   أزياء العرائس . Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
+          content="Consultez et gérez les commandes sur le portail administratif de  ELASALA AZ. Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
         />
 
         {/* Balises Open Graph pour le partage sur les réseaux sociaux */}
         <meta
           property="og:title"
-          content="  أزياء العرائس  - Gestion des Commandes (Admin)"
+          content=" ELASALA AZ - Gestion des Commandes (Admin)"
         />
         <meta
           property="og:description"
-          content="Consultez et gérez les commandes sur le portail administratif de   أزياء العرائس . Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
+          content="Consultez et gérez les commandes sur le portail administratif de  ELASALA AZ. Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
         <meta
           property="og:url"
-          content="https://topshoes-dz.pages.dev/admin/orders"
+          content="https://elasala-az.pages.dev/admin/orders"
         />
 
         {/* Balises Twitter Card pour le partage sur Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="  أزياء العرائس  - Gestion des Commandes (Admin)"
+          content=" ELASALA AZ - Gestion des Commandes (Admin)"
         />
         <meta
           name="twitter:description"
-          content="Consultez et gérez les commandes sur le portail administratif de   أزياء العرائس . Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
+          content="Consultez et gérez les commandes sur le portail administratif de  ELASALA AZ. Suivez les achats, gérez les expéditions et assurez un traitement efficace des commandes clients."
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/duh30yscb/image/upload/v1706972627/Top%20Shoe%20DZ/w8zap4glsiegcrdxk0qq.jpg"
+          content="https://res.cloudinary.com/duh30yscb/image/upload/v1709980316/WeddingSuitsMenDZ/zwjp7brmzbclxtdspbt5.jpg"
         />
 
         {/* Balises méta supplémentaires */}
@@ -166,7 +166,7 @@ const Orders = () => {
                         {formatTimestamp(order.createdAt)}
                     </td>
                     <td className="py-2 px-4 text-xs md:text-lg border-b">
-                        <button onClick={() => openOrder(order)} className="bg-purple-700 text-white px-2 py-1 rounded ml-2">
+                        <button onClick={() => openOrder(order)} className="bg-green-700 text-white px-2 py-1 rounded ml-2">
                             <i className="fas fa-eye"></i>
                         </button>
                     </td>
@@ -298,7 +298,7 @@ const Orders = () => {
               //   disabled={loading}
               type="button"
               onClick={() => handleCall(orderToView?.phone)}
-              className="mt-4 bg-purple-800 flex w-full justify-center items-center gap-2 text-white disabled:bg-purple-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-purple-600 focus:outline-none focus:shadow-outline-blue"
+              className="mt-4 bg-green-800 flex w-full justify-center items-center gap-2 text-white disabled:bg-green-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-blue"
             >
               <i className="fa-solid fa-phone"></i>
               <p className="text-lg font-bold">Appeler</p>
@@ -308,7 +308,7 @@ const Orders = () => {
               disabled={loading}
               onClick={deleteOrder}
               type="button"
-              className="mt-4 bg-red-600 flex w-full justify-center items-center gap-2 text-white disabled:bg-purple-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-red-500 focus:outline-none focus:shadow-outline-blue"
+              className="mt-4 bg-red-600 flex w-full justify-center items-center gap-2 text-white disabled:bg-green-400 disabled:scale-100 active:scale-95 cursor-pointer transition px-4 py-2 rounded-md hover:bg-red-500 focus:outline-none focus:shadow-outline-blue"
             >
               <i className="fa-solid fa-trash"></i>
               <p className="text-lg font-bold">Supprimer</p>
